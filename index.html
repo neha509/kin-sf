@@ -4,102 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KIN SF — Strength, with community built in.</title>
-  <meta name="description" content="KIN SF is a community strength gym in San Francisco integrating education, mental well-being, and social connection — built for people who want to get stronger and feel better." />
+  <meta name="description" content="Community strength gym in San Francisco integrating education, whole-body well-being, and social connection." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg"></div>
-
-  <header class="nav">
-    <div class="brand">
-      <div class="mark">KIN</div>
-      <div class="brand-text">
-        <div class="brand-name">KIN SF</div>
-        <div class="brand-sub">Strength • Education • Community</div>
+  <main class="wrap" id="top">
+    <section class="hero">
+      <div class="brandline">
+        <div class="wordmark">KIN SF</div>
+        <div class="meta">San Francisco • launching soon</div>
       </div>
-    </div>
-    <a class="btn btn-ghost" href="#waitlist">Join waitlist</a>
-  </header>
-
-  <main class="container">
-    <section class="hero" id="top">
-      <p class="pill">San Francisco • launching soon</p>
 
       <h1>Strength, with community built in.</h1>
 
       <p class="lede">
-        Kin SF is a community strength gym in San Francisco that integrates education,
-        mental well-being, and social connection — built for people who want to get stronger and feel better.
+        A community strength gym integrating <b>education</b>, <b>whole-body well-being</b>, and
+        <b>social connection</b> — built for people who want to get stronger and feel better.
       </p>
+
+      <div class="cta-row">
+        <a class="cta" href="#waitlist">Join the waitlist</a>
+        <a class="link" href="#about">What to expect</a>
+      </div>
+    </section>
+
+    <!-- Waitlist is the main event -->
+    <section class="waitlist" id="waitlist">
+      <div class="waitlist-head">
+        <h2>Join the waitlist</h2>
+        <p class="sub">Founding perks • early pop-ups • launch updates</p>
+      </div>
 
       <form id="waitlistForm" class="form" aria-label="Kin SF waitlist form">
         <div class="row">
           <div class="field">
             <label for="name">Name *</label>
-            <input id="name" name="name" type="text" placeholder="Neha" autocomplete="name" required />
+            <input id="name" name="name" type="text" autocomplete="name" required />
           </div>
           <div class="field">
             <label for="email">Email *</label>
-            <input id="email" name="email" type="email" placeholder="neha@email.com" autocomplete="email" required />
+            <input id="email" name="email" type="email" autocomplete="email" required />
           </div>
         </div>
 
-        <div class="row">
-          <div class="field">
-            <label for="neighborhood">Neighborhood (optional)</label>
-            <input id="neighborhood" name="neighborhood" type="text" placeholder="Hayes Valley, SoMa, Mission…" />
-          </div>
-          <div class="field">
-            <label for="phone">Phone (optional)</label>
-            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" autocomplete="tel" />
-          </div>
-        </div>
+        <details class="more">
+          <summary>Optional details</summary>
 
-        <div class="field">
-          <label for="excitedAbout">What are you most excited about? (optional)</label>
-          <textarea id="excitedAbout" name="excitedAbout" rows="3" placeholder="Strength training, workshops, community, DJ events…"></textarea>
-        </div>
+          <div class="row">
+            <div class="field">
+              <label for="neighborhood">Neighborhood</label>
+              <input id="neighborhood" name="neighborhood" type="text" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="excitedAbout">What are you most excited about?</label>
+            <textarea id="excitedAbout" name="excitedAbout" rows="3"></textarea>
+          </div>
+        </details>
 
         <input id="source" name="source" type="hidden" />
 
-        <button class="btn btn-primary" id="submitBtn" type="submit">
-          Join the waitlist
-        </button>
-
-        <p class="status small" id="statusText" aria-live="polite"></p>
-        <p class="hint small">Founding member perks • early pop-ups • launch updates</p>
+        <button class="btn" id="submitBtn" type="submit">Join waitlist</button>
+        <p class="status" id="statusText" aria-live="polite"></p>
+        <p class="fine">No spam. Unsubscribe anytime.</p>
       </form>
     </section>
 
-    <section class="mini" aria-label="What you’ll find at Kin SF">
-      <h2>What you’ll find at Kin</h2>
-      <div class="mini-list">
-        <div class="mini-item">
-          <div class="mini-title">Strength training floor</div>
-          <div class="mini-sub">Practical, approachable programming — built for consistency.</div>
+    <!-- Minimal proof (no cards) -->
+    <section class="about" id="about">
+      <h2>What to expect</h2>
+      <div class="list">
+        <div class="item">
+          <div class="k">Strength</div>
+          <div class="v">Open gym + practical guidance for real progress.</div>
         </div>
-        <div class="mini-item">
-          <div class="mini-title">Education + guidance</div>
-          <div class="mini-sub">Workshops, form clinics, and tools that make training make sense.</div>
+        <div class="item">
+          <div class="k">Education</div>
+          <div class="v">Workshops, form clinics, and learning tools that make training make sense.</div>
         </div>
-        <div class="mini-item">
-          <div class="mini-title">Whole-body community</div>
-          <div class="mini-sub">Mental well-being + social connection — plus events that make showing up easy.</div>
+        <div class="item">
+          <div class="k">Whole-body</div>
+          <div class="v">Well-being + community woven into the experience — not tacked on.</div>
+        </div>
+        <div class="item">
+          <div class="k">Community</div>
+          <div class="v">Pop-ups, events, and social energy that makes showing up easier.</div>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-left">
-        <div class="footer-brand">KIN SF</div>
-        <div class="small muted">© <span id="year"></span> • San Francisco</div>
-      </div>
-      <div class="footer-right small muted">
-        Built for people who want to get stronger and feel better.
-      </div>
+      <div>© <span id="year"></span> KIN SF</div>
+      <div class="muted">Strength • Education • Community</div>
     </footer>
   </main>
 
   <script src="script.js"></script>
+  <script>
+    // smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener("click", (e) => {
+        const el = document.querySelector(a.getAttribute("href"));
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
